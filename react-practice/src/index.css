@@ -1,0 +1,124 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: #213547;
+  background: #f6f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e4e4e7;
+    background: #18181b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  height: 48px;
+  width: 48px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.hint {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hint {
+    color: #a1a1aa;
+  }
+}
+
+.hint code {
+  font-size: 0.85em;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hint code {
+    background: #27272a;
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #e4e4e7;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #27272a;
+    border-color: #3f3f46;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.card button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background: #646cff;
+  transition: background 0.15s ease;
+}
+
+.card button:hover {
+  background: #535bf2;
+}
+
+.subtle {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+@media (prefers-color-scheme: dark) {
+  .subtle {
+    color: #a1a1aa;
+  }
+}
